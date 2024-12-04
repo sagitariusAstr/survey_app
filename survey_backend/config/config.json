@@ -1,0 +1,23 @@
+{
+    "development": {
+      "username": "root",
+      "password": "dbpass@1234",
+      "database": "survey",
+      "host": "localhost",
+      "dialect": "mariadb"
+    },
+    "test": {
+      "username": "root",
+      "password": "dbpass@1234",
+      "database": "survey",
+      "host": "localhost",
+      "dialect": "mariadb"
+    },
+    "production": {
+      "username": "root",
+      "password":"dbpass@1234",
+      "database": "survey",
+      "host": "localhost",
+      "dialect": "mariadb"
+    }
+  }

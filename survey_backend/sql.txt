@@ -1,0 +1,54 @@
+->initializing database
+    ->create database in phpmyadmin
+    ->setup config files
+    
+
+
+->managing migrations
+step 1 create migrations
+        npx sequelize-cli migration:generate --name create_appointment_table
+step 2
+    create database model
+    make sure the model matches the migration fields
+run migration
+  npx sequelize-cli db:migrate
+
+
+
+->So I was facing the problem of sequelize db contraint error and here are the things I used to fix it:
+    ->ALWAYS USE MIGRATIONS TO DEVELOP TABLE ESPECIALLY WITH FOREIGN KEY AND RELATIONS
+    ->DEVELOP MIGRATIONS FOR PARENT TABLE FIRST AND THEN THE CHILDREN TABLE WITH FOREIGN KEY LATER
+    ->PAY ATTENTION TO IMPORTS AND USE CORRECT NAMING CONVENTIONS
+
+
+
+->Reset id count in SQL
+    ->SELECT MAX(id) from table_name
+    ->ALTER TABLE table_name AUTO_INCREMENT = 1;
+    
+
+
+
+->From response fetch service:
+    sequelize eager problem was solved by using alias as the model uses it to develop an association between tables
+    include:[{
+        model:SurveyQuestionModel2,
+        as:'question'
+    }]
+
+
+->Fetch unique_studentID for a specific school
+    SELECT DISTINCT unique_studentID
+    FROM response_1
+    WHERE school = 'Rato Bangla School';
+
+Sequelize:
+    
+
+
+
+->So I have used api for fetching student specific responses in a weird manner i.e for response1 I have 
+    used services from fetch.service wheres for fetching from response 2 I have used service from response.service.js
+    because I encountered an error regarding eagerloading error while trying to use services from
+    fetch service for response 2
+

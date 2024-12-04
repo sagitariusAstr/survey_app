@@ -1,0 +1,23 @@
+.footer {
+    color: white;
+    padding: 25px;
+    background: #0D1282; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #EEEDED,
+      #0D1282
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0D1282,
+    #071952);
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  
+  .footer a:hover {
+    color: #ffefba;
+    border-bottom: 1px solid #ffefba;
+  }

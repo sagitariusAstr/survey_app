@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400&display=swap');
+
+
+/* styling header */
+
+.navbar{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px gray;
+    --webkit-box-shadow: 0 8px 6px -6px gray;
+    border-bottom: 0.3px solid gray !important;
+    margin-bottom: 15px;
+    background: #0D1282; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #EEEDED,
+      #0D1282
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0D1282,
+    #071952);
+}
+
+
+.navbar-toggler{
+  color : white !important;
+  background-color: white !important;
+}
+
+
+  
+
+
+
+  
+
+  
+
+  
+
